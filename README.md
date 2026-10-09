@@ -16,7 +16,7 @@ This project represents the practical culmination and hands on portfolio applica
 
 The learning journey documented in this project reflects a complete progression from foundational querying to advanced commercial analysis using the Microsoft Contoso retail dataset. Rather than simply writing basic queries, the training focused on understanding the deeper business context, solving executive problems, and extracting meaningful intelligence across ten years of operational history.
 
-![01 sales table exploration](images/01_sales_table_exploration.png)
+![01 sales table exploration](images/Screenshot%202026-10-09%20170625.png)
 
 ## Dataset and Schema Architecture
 
