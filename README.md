@@ -1,4 +1,4 @@
-# SQL for Data Analytics Intermediate Course
+# Intermediate SQL for Data Analytics
 
 ## Table of Contents
 
