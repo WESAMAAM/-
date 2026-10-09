@@ -40,7 +40,8 @@ LIMIT 10
 
 ````
 
-![01 sales table exploration](images/01_sales_table_exploration.png)
+![01 sales table exploration](images/Screenshot%202026-09-27%20204644.png)
+![01 sales table exploration](images/Screenshot%202026-10-09%20170625.png)
 
 This query confirmed that each row represents an individual line item within an order. The table includes both `orderdate` and `deliverydate`, as well as financial measures like `quantity`, `netprice`, and `exchangerate`. Because Contoso sells across multiple countries in currencies such as USD, CAD, and GBP, multiplying by `exchangerate` is required to normalize all revenue into US dollars.
 
@@ -72,7 +73,7 @@ WHERE orderdate::date >= '2020/01/01'
 
 ````
 
-![02 transaction categorization](images/02_transaction_categorization.png)
+![02 transaction categorization](images/Screenshot%202026-09-27%20204502.png)
 
 To calculate total net revenue since the start of 2020, a Common Table Expression was implemented:
 
@@ -92,7 +93,7 @@ FROM nr
 
 ````
 
-![03 total net revenue 2020](images/03_total_net_revenue_2020.png)
+![03 total net revenue 2020](images/Screenshot%202026-09-27%20204744.png)
 
 This calculation produced a total net revenue of 118946063 USD generated across 124451 transaction rows since January 1 2020.
 
@@ -121,7 +122,7 @@ ORDER BY total_revenue DESC;
 
 ````
 
-![04 top spenders ranking](images/04_top_spenders_ranking.png)
+![04 top spenders ranking](images/Screenshot%202026-10-08%20144847.png)
 
 Top Individual Spenders:
 
@@ -176,7 +177,7 @@ FROM customer_data d;
 
 ````
 
-![05 create customer profile view](images/05_create_customer_profile_view.png)
+![05 create customer profile view](images/Screenshot%202026-10-08%20145832.png)
 
 Querying this view reveals detailed customer profiles:
 
@@ -187,7 +188,7 @@ FROM cs_valubale_customers_info
 
 ````
 
-![06 view customer info output](images/06_view_customer_info_output.png)
+![06 view customer info output](images/Screenshot%202026-10-08%20150039.png)
 
 For example customer Tahlia (key 688) from Australia joined in 2023 at age 28 and spent 16909 USD across five line items in a single transaction on September 13 2023.
 
@@ -208,7 +209,7 @@ GROUP BY cohort_year
 
 ````
 
-![07 cohort revenue generation](images/07_cohort_revenue_generation.png)
+![07 cohort revenue generation](images/Screenshot%202026-10-08%20153808.png)
 
 Cohort Findings:
 
@@ -265,9 +266,8 @@ FROM cohort_final
 
 ````
 
-![08 cohort ltv pipeline code](images/08_cohort_ltv_pipeline_code.png)
-
-![09 cohort ltv pipeline results](images/09_cohort_ltv_pipeline_results.png)
+![08 cohort ltv pipeline code](images/Screenshot%202026-10-05%20183441.png)
+![09 cohort ltv pipeline results](images/Screenshot%202026-10-05%20183545.png)
 
 Results across cohorts:
 
@@ -311,7 +311,7 @@ LIMIT 50
 
 ````
 
-![10 cohort retention grid](images/10_cohort_retention_grid.png)
+![10 cohort retention grid](images/Screenshot%202026-10-03%20142206.png)
 
 Tracking the 2015 cohort across nine years:
 
@@ -346,7 +346,7 @@ LIMIT 10
 
 ````
 
-![11 ranking functions comparison](images/11_ranking_functions_comparison.png)
+![11 ranking functions comparison](images/Screenshot%202026-10-04%20161720.png)
 
 Top order counts:
 
@@ -379,7 +379,7 @@ LIMIT 50
 
 ````
 
-![12 customer ltv cohort avg](images/12_customer_ltv_cohort_avg.png)
+![12 customer ltv cohort avg](images/Screenshot%202026-10-03%20150048.png)
 
 This query identifies individual VIP customers. For example Customer 688 achieved an LTV of 16909.04 USD compared to the 2023 cohort average of 2543.18 USD.
 
@@ -403,7 +403,7 @@ ORDER BY total_customer DESC
 
 ````
 
-![13 daily customers geographic](images/13_daily_customers_geographic.png)
+![13 daily customers geographic](images/Screenshot%202026-09-28%20185947.png)
 
 The highest customer traffic day was February 18 2023 with 157 unique customers: 100 from North America, 47 from Europe, and 10 from Australia.
 
@@ -428,7 +428,7 @@ ORDER BY net_revenue DESC
 
 ````
 
-![14 yoy category revenue](images/14_yoy_category_revenue.png)
+![14 yoy category revenue](images/Screenshot%202026-09-28%20193841.png)
 
 Revenue by category:
 
@@ -462,7 +462,7 @@ ORDER BY avg_revenue DESC
 
 ````
 
-![15 statistical benchmarking](images/15_statistical_benchmarking.png)
+![15 statistical benchmarking](images/Screenshot%202026-09-28%20195311.png)
 
 Comparing true medians across categories:
 
@@ -479,7 +479,7 @@ GROUP BY p.categoryname
 
 ````
 
-![16 category median comparison](images/16_category_median_comparison.png)
+![16 category median comparison](images/Screenshot%202026-09-29%20212757.png)
 
 In Computers for 2022, the average was 1565.62 USD while the median was 809.70 USD. This large difference indicates positive skewness caused by single transactions reaching up to 38083 USD.
 
@@ -495,7 +495,7 @@ FROM sales
 
 ````
 
-![17 global median revenue](images/17_global_median_revenue.png)
+![17 global median revenue](images/Screenshot%202026-09-29%20225203.png)
 
 This returned a global median of 399.17 USD.
 
@@ -516,7 +516,7 @@ GROUP BY p.categoryname
 
 ````
 
-![18 high low revenue segmentation](images/18_high_low_revenue_segmentation.png)
+![18 high low revenue segmentation](images/Screenshot%202026-09-29%20225301.png)
 
 Next the full quartile boundaries were computed:
 
@@ -530,7 +530,7 @@ FROM sales
 
 ````
 
-![19 quartile thresholds](images/19_quartile_thresholds.png)
+![19 quartile thresholds](images/Screenshot%202026-09-29%20230026.png)
 
 Thresholds:
 
@@ -568,9 +568,7 @@ ORDER BY category
 
 ````
 
-![20 quartile tiering code](images/20_quartile_tiering_code.png)
-
-![21 quartile tiering results](images/21_quartile_tiering_results.png)
+![20 quartile tiering code](images/Screenshot%202026-09-30%20173641.png)
 
 Complete 24 Row Distribution:
 
@@ -604,7 +602,7 @@ GROUP BY order_year
 
 ````
 
-![22 supply chain lead time](images/22_supply_chain_lead_time.png)
+![22 supply chain lead time](images/Screenshot%202026-10-01%20153349.png)
 
 Fulfillment Metrics Across Ten Years:
 
@@ -638,7 +636,7 @@ GROUP BY orderdate_month
 
 ````
 
-![23 monthly time series](images/23_monthly_time_series.png)
+![23 monthly time series](images/Screenshot%202026-09-30%20174316.png)
 
 This query tracked 112 months from January 2015 to April 2024. In 2015 monthly revenue ranged from 160767 USD to 706374 USD with 78 to 291 active customers. By February 2024, monthly revenue reached a record 3542323 USD with 1718 active customers.
 
@@ -660,7 +658,7 @@ ORDER BY
 
 ````
 
-![24 extract year month](images/24_extract_year_month.png)
+![24 extract year month](images/Screenshot%202026-09-30%20175828.png)
 
 This query provides separate columns for year and month, ready for spreadsheet and dashboard reporting.
 
@@ -682,7 +680,7 @@ ORDER BY orderdate
 
 ````
 
-![25 daily category feed](images/25_daily_category_feed.png)
+![25 daily category feed](images/Screenshot%202026-09-30%20193950.png)
 
 This query produced 11171 rows, attaching execution timestamps to daily category figures.
 
@@ -708,7 +706,7 @@ ORDER BY orderdate
 
 ````
 
-![26 rolling window output](images/26_rolling_window_output.png)
+![26 rolling window output](images/Screenshot%202026-10-01%20153455.png)
 
 Executed on October 1 2026, the query dynamically set its starting boundary to October 1 2021, returning 7129 rows without requiring manual date edits.
 
@@ -736,7 +734,7 @@ FROM monthly_revenue
 
 ````
 
-![27 mom growth rates](images/27_mom_growth_rates.png)
+![27 mom growth rates](images/Screenshot%202026-10-04%20222728.png)
 
 Monthly Swings in 2023:
 
@@ -768,7 +766,7 @@ FROM monthly_revenue
 
 ````
 
-![28 value window functions](images/28_value_window_functions.png)
+![28 value window functions](images/Screenshot%202026-10-04%20221448.png)
 
 
 ````sql
@@ -791,7 +789,7 @@ FROM monthly_revenue
 
 ````
 
-![29 lag lead output](images/29_lag_lead_output.png)
+![29 lag lead output](images/Screenshot%202026-10-04%20222004.png)
 
 These queries verified benchmark figures for 2023: January opened at 3664431 USD, July mid year reached 2337639 USD, and December closed at 2928551 USD.
 
@@ -827,44 +825,11 @@ FROM final
 
 ````
 
-![30 moving average smoothing](images/30_moving_average_smoothing.png)
+![30 moving average smoothing](images/Screenshot%202026-10-05%20185847.png)
 
 While April dropped to 1.16 million USD, the moving average showed that the business baseline remained at 2.11 million USD, stabilizing around 2.6 million USD in the second half of the year.
 
 ## Customer Trajectory and Cart Depth Dynamics
-
-### Cumulative Customer Spending Velocity
-
-
-````sql
-SELECT
-  customerkey,
-  orderdate,
-  netprice * quantity * exchangerate AS net_revenue,
-  AVG(netprice * quantity * exchangerate) OVER(
-    PARTITION BY customerkey
-    ORDER BY orderdate
-  ) AS running_order_avg,
-  COUNT(*) OVER(
-    PARTITION BY customerkey
-    ORDER BY orderdate
-  ) AS running_order_count
-
-FROM sales
-
-ORDER BY customerkey
-
-LIMIT 50
-
-````
-
-![31 running spend velocity](images/31_running_spend_velocity.png)
-
-Customer 387 progression:
-
-- Started on December 21 2018 with 4 items averaging 592.64 USD.
-- Purchased a 1265.56 USD item on October 30 2021, raising their running average to 727.22 USD.
-- Reached 9 items by November 16 2023, stabilizing at 517.32 USD.
 
 ### Cart Depth and Line Item Revenue Drop Off
 
@@ -891,7 +856,7 @@ LIMIT 50
 
 ````
 
-![32 cart depth dropoff](images/32_cart_depth_dropoff.png)
+![32 cart depth dropoff](images/Screenshot%202026-10-02%20201127.png)
 
 On January 1 2015, line 1 generated 35.19 percent of revenue, line 2 generated 13.81 percent, and line 3 generated 22.30 percent, while lines 4 and 5 dropped to 0.58 percent and 0.32 percent.
 
@@ -915,18 +880,7 @@ ORDER BY orderdate
 
 ````
 
-![33 create view daily revenue](images/33_create_view_daily_revenue.png)
-
-
-````sql
-SELECT *
-FROM daily_revenue dr
-
-````
-
-![34 query view daily revenue](images/34_query_view_daily_revenue.png)
-
-This view provides daily total revenue with proper formatting in a single call.
+![33 create view daily revenue](images/Screenshot%202026-10-07%20151144.png)
 
 ### Valuable Customers Profile View
 
