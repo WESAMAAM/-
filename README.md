@@ -12,9 +12,9 @@
 
 ## Project Overview
 
-This project presents an in depth database analytics study using the Microsoft Contoso retail dataset. The objective is to examine ten years of transactional data to discover customer behavior, product category performance, cohort retention patterns, and supply chain delivery speed.
+This project represents the practical culmination and hands on portfolio application of everything learned in the comprehensive video course SQL for Data Analytics Intermediate Course plus Project taught by Luke Barousse. Through this course, theoretical SQL concepts were transformed into practical data engineering and analytical problem solving skills applied to a real business scenario.
 
-Using PostgreSQL and DBeaver, this project answers critical business questions and builds clean database views for ongoing reporting. Every query presented in this document was written and tested directly against the database to extract practical commercial intelligence.
+The learning journey documented in this project reflects a complete progression from foundational querying to advanced commercial analysis using the Microsoft Contoso retail dataset. Rather than simply writing basic queries, the training focused on understanding the deeper business context, solving executive problems, and extracting meaningful intelligence across ten years of operational history.
 
 ## Dataset and Schema Architecture
 
