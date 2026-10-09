@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-* [Course Overview](#project-overview)
+* [Course Overview](#course-overview)
 * [Dataset and Schema Architecture](#dataset-and-schema-architecture)
 * [Business Questions and SQL Solutions](#business-questions-and-sql-solutions)
 * [Advanced SQL Queries and Statistical Analysis](#advanced-sql-queries-and-statistical-analysis)
