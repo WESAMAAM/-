@@ -1,4 +1,4 @@
-# Contoso Retail Analytics and Business Intelligence with PostgreSQL
+# SQL for Data Analytics Intermediate Course
 
 ## Table of Contents
 
