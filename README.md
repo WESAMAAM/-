@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-* [Project Overview](#project-overview)
+* [Course Overview](#project-overview)
 * [Dataset and Schema Architecture](#dataset-and-schema-architecture)
 * [Business Questions and SQL Solutions](#business-questions-and-sql-solutions)
 * [Advanced SQL Queries and Statistical Analysis](#advanced-sql-queries-and-statistical-analysis)
@@ -10,11 +10,11 @@
 * [Comprehensive Business Analysis and Findings](#comprehensive-business-analysis-and-findings)
 * [Tools and Technologies](#tools-and-technologies)
 
-## Project Overview
+## Course Overview
 
-This project represents the practical culmination and hands on portfolio application of everything learned in the comprehensive video course SQL for Data Analytics Intermediate Course plus Project taught by Luke Barousse. Through this course, theoretical SQL concepts were transformed into practical data engineering and analytical problem solving skills applied to a real business scenario.
+This portfolio is an application of everything learned in the comprehensive course SQL for Data Analytics Intermediate Course by Luke Barousse. Through this course, theoretical SQL concepts were transformed into practical data engineering and analytical problem solving skills applied to a real business scenario.
 
-The learning journey documented in this project reflects a complete progression from foundational querying to advanced commercial analysis using the Microsoft Contoso retail dataset. Rather than simply writing basic queries, the training focused on understanding the deeper business context, solving executive problems, and extracting meaningful intelligence across ten years of operational history.
+The learning journey documented in this Course reflects a complete progression from foundational querying to advanced commercial analysis using the Microsoft Contoso retail dataset. Rather than simply writing basic queries, the training focused on understanding the deeper business context, solving executive problems, and extracting meaningful intelligence across ten years of operational history.
 
 ![01 sales table exploration](images/WhatsApp%20Image%202026-10-09%20at%204.28.25%20PM.jpeg)
 
