@@ -81,7 +81,7 @@ FROM all_data;
 
 The output confirmed that all rows, exceeding 56000 records, were present and mapped correctly to their columns.
 
-[images/pgadmin_query_results.png]
+[images/Screenshot%202026-10-10%20175333.png]
 
 ## 6. DBeaver Connection and Workspace Setup
 To provide an efficient querying environment, DBeaver was linked to the PostgreSQL server using localhost on port 5432. The connection to NashvilleHousingData was tested and confirmed. Running the same retrieval query inside DBeaver verified that the client communicates smoothly with the database and is ready for upcoming data cleaning operations.
