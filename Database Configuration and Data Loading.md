@@ -72,9 +72,9 @@ CREATE TABLE public.all_data
 ![image 2](images/Screenshot%202026-10-10%20171540.png)
 ![image 3](images/Screenshot%202026-10-10%20171423.png)
 
-## 5. Data Ingestion and Verification
-After defining the table, the dataset was imported from the CSV file into PostgreSQL, and connected to DBeaver.
-To ensure the import succeeded and all rows were loaded without corruption, a verification query was executed:
+## 5. DBeaver Connection and Workspace Setup
+To provide an efficient querying environment, DBeaver was linked to the PostgreSQL server using localhost on port 5432. The connection to NashvilleHousingData was tested and confirmed. Running the same retrieval query inside DBeaver verified that the client communicates smoothly with the database and is ready for upcoming data cleaning operations.
+
 
 ```sql
 SELECT *
@@ -85,7 +85,3 @@ FROM all_data;
 
 The output confirmed that all rows, exceeding 56000 records, were present and mapped correctly to their columns.
 
-## 6. DBeaver Connection and Workspace Setup
-To provide an efficient querying environment, DBeaver was linked to the PostgreSQL server using localhost on port 5432. The connection to NashvilleHousingData was tested and confirmed. Running the same retrieval query inside DBeaver verified that the client communicates smoothly with the database and is ready for upcoming data cleaning operations.
-
-[images/dbeaver_query_results.png]
