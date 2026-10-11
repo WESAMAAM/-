@@ -13,6 +13,8 @@ The following tools were used during this stage:
 ## 3. Data Preparation and Transformation
 The original data was provided in an Excel workbook. Because relational databases import flat structured text more efficiently, the file was converted from Excel format to a standard CSV file. This step prepares the data for quick and clean importation into PostgreSQL without encoding issues.
 
+![image 0](images/Screenshot%202026-10-11%20203114.png)
+
 ## 4. Database and Table Architecture
 A new database named NashvilleHousingData was created in PostgreSQL. Inside the public schema, a main table named all_data was built to store all incoming records.
 
@@ -37,9 +39,8 @@ The table contains 19 specific attributes:
 18. FullBath: Count of full bathrooms
 19. HalfBath: Count of half bathrooms
 
-    [images/pgadmin_table_columns.png]
 
-![Table Columns](images/pgadmin_table_columns.png)
+![image 1](images/Screenshot%202026-10-10%20173414.png)
 
 The SQL definition used to create the table structure:
 
@@ -68,10 +69,11 @@ CREATE TABLE public.all_data
 );
 ```
 
-[images/pgadmin_create_table_sql.png]
+![image 2](images/Screenshot%202026-10-10%20171540.png)
+![image 3](images/Screenshot%202026-10-10%20171423.png)
 
 ## 5. Data Ingestion and Verification
-After defining the table, the dataset was imported from the CSV file into PostgreSQL.
+After defining the table, the dataset was imported from the CSV file into PostgreSQL, and connected to DBeaver.
 To ensure the import succeeded and all rows were loaded without corruption, a verification query was executed:
 
 ```sql
