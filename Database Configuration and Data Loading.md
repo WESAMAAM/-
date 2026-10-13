@@ -18,30 +18,6 @@ The original data was provided in an Excel workbook. Because relational database
 ## 4. Database and Table Architecture
 A new database named NashvilleHousingData was created in PostgreSQL. Inside the public schema, a main table named all_data was built to store all incoming records.
 
-The table contains 19 specific attributes:
-1. UniqueID: Unique numeric identifier for each transaction
-2. ParcelID: Parcel identification code
-3. LandUse: Property usage category such as Single Family or Residential Condo
-4. PropertyAddress: Physical address of the property
-5. SaleDate: Date of property sale
-6. SalePrice: Recorded sale price
-7. LegalReference: Legal document reference number
-8. SoldAsVacant: Status showing if the property was vacant at sale time
-9. OwnerName: Full name of the property owner
-10. OwnerAddress: Mailing or residential address of the owner
-11. Acreage: Land area size in acres
-12. TaxDistrict: Designated local tax district
-13. LandValue: Assessed market value of the land
-14. BuildingValue: Assessed value of the building structures
-15. TotalValue: Sum of land and building values
-16. YearBuilt: Construction year of the property
-17. Bedrooms: Total count of bedrooms
-18. FullBath: Count of full bathrooms
-19. HalfBath: Count of half bathrooms
-
-
-![image 1](images/Screenshot%202026-10-10%20173414.png)
-
 The SQL definition used to create the table structure:
 
 ```sql
@@ -71,6 +47,29 @@ CREATE TABLE public.all_data
 
 ![image 2](images/Screenshot%202026-10-10%20171540.png)
 ![image 3](images/Screenshot%202026-10-10%20171423.png)
+
+The table contains 19 specific attributes:
+1. UniqueID: Unique numeric identifier for each transaction
+2. ParcelID: Parcel identification code
+3. LandUse: Property usage category such as Single Family or Residential Condo
+4. PropertyAddress: Physical address of the property
+5. SaleDate: Date of property sale
+6. SalePrice: Recorded sale price
+7. LegalReference: Legal document reference number
+8. SoldAsVacant: Status showing if the property was vacant at sale time
+9. OwnerName: Full name of the property owner
+10. OwnerAddress: Mailing or residential address of the owner
+11. Acreage: Land area size in acres
+12. TaxDistrict: Designated local tax district
+13. LandValue: Assessed market value of the land
+14. BuildingValue: Assessed value of the building structures
+15. TotalValue: Sum of land and building values
+16. YearBuilt: Construction year of the property
+17. Bedrooms: Total count of bedrooms
+18. FullBath: Count of full bathrooms
+19. HalfBath: Count of half bathrooms
+
+![image 1](images/Screenshot%202026-10-10%20173414.png)
 
 ## 5. DBeaver Connection and Workspace Setup
 To provide an efficient querying environment, DBeaver was linked to the PostgreSQL server using localhost on port 5432. The connection to NashvilleHousingData was tested and confirmed. Running the same retrieval query inside DBeaver verified that the client communicates smoothly with the database and is ready for upcoming data cleaning operations.
