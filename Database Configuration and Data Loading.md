@@ -1,4 +1,4 @@
-# Database Configuration and Data Loading
+# Stage 1: Database Configuration and Data Loading
 
 ## 1. Overview
 This first stage involves setting up the database environment, converting the source files, defining the database schema, and verifying that the records are imported properly.
