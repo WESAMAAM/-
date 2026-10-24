@@ -57,7 +57,7 @@ Data analysis, exploratory analysis, and business intelligence project on over 5
 ![images](images/Recording%202026-10-24%20215247.gif)
 
 ## <a id="-repository-structure-and-detailed-documentation"></a> Repository Structure and Detailed Documentation
-- Stage 1: Environment Setup and Data Ingestion
-- Stage 2: Data Cleaning and Database Normalization
-- Stage 3: Exploratory Data Analysis and Business Insights
-- Stage 4: Tableau Dashboard and Executive Presentation
+- [Stage 1: Environment Setup and Data Ingestion](https://github.com/WESAMAAM/-/blob/main/Database%20Configuration%20and%20Data%20Loading.md)
+- [Stage 2: Data Cleaning and Database Normalization](https://github.com/WESAMAAM/-/blob/main/Data%20Cleaning%20and%20Normalization.md)
+- [Stage 3: Exploratory Data Analysis and Business Insights](https://github.com/WESAMAAM/-/blob/main/Exploratory%20Data%20Analysis%2C%20Feature%20Engineering%2C%20and%20Business%20Insights.md)
+- [Stage 4: Tableau Dashboard and Executive Presentation](https://github.com/WESAMAAM/-/blob/main/Data%20Visualization%2C%20Interactive%20Dashboarding%2C%20and%20Executive%20Presentation.md)
