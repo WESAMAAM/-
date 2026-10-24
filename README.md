@@ -6,7 +6,7 @@
 - [Data Visualization, Interactive Dashboarding, and Executive Presentation](#-stage-4-data-visualization-interactive-dashboarding-and-executive-presentation)
 - [Repository Structure and Detailed Documentation](#-repository-structure-and-detailed-documentation)
 
-## 📌 Project Architecture
+## Project Architecture
 ![images](images/Gemini_Generated_Image_a5ozv4a5ozv4a5oz.jpg)
 
 ## <a id="-project-summary"></a> Project Summary
