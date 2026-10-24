@@ -55,10 +55,7 @@ Final Outcome: Delivered a production ready Tableau Dashboard summarizing key me
 [images/executive_presentation_cover.jpg]
 
 Repository Structure and Detailed Documentation
-Stage 1: Environment Setup and Data Ingestion
-
-Stage 2: Data Cleaning and Database Normalization
-
-Stage 3: Exploratory Data Analysis and Business Insights
-
-Stage 4: Tableau Dashboard and Executive Presentation
+- Stage 1: Environment Setup and Data Ingestion
+- Stage 2: Data Cleaning and Database Normalization
+- Stage 3: Exploratory Data Analysis and Business Insights
+- Stage 4: Tableau Dashboard and Executive Presentation
