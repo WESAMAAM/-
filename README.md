@@ -12,7 +12,7 @@
 ## <a id="-project-summary"></a> Project Summary
 Data analysis, exploratory analysis, and business intelligence project on over 56,000 housing transactions in Nashville. Raw spreadsheet records were migrated into PostgreSQL, cleaned and normalized into a relational schema using SQL, analyzed with Python to solve key financial questions, and delivered through an interactive Tableau dashboard and executive presentation.
 
-## <a id="-database-configuration-and-data-loading"></a> Database Configuration and Data Loading
+## <a id="-database-configuration-and-data-loading"></a> Stage 1:Database Configuration and Data Loading
 **What Was Done:** Converted the raw Excel dataset to CSV, built the `NashvilleHousingData` database in PostgreSQL 18 via pgAdmin 4, defined a 19-column staging table, and connected DBeaver for SQL operations.
 
 **Final Outcome:** Successfully ingested over 56,000 raw records and automatically standardized sale dates into clean date formats upon import.
