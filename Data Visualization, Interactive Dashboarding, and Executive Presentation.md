@@ -11,9 +11,9 @@ To visualize the normalized tables, Tableau Desktop was linked directly to the l
 - Database Name: NashvilleHousingData
 - Authentication: postgres user credentials
 
-[images/dbeaver_connection_settings.png]
+![images](images/Screenshot%202026-10-21%20221430.png)
 
-[images/tableau_postgres_connection.png]
+![images](images/Screenshot%202026-10-21%20221920.png)
 
 ## 2. Data Modeling and Extract Configuration in Tableau
 Inside the Tableau Data Source environment, a relational data model was constructed to unite the three normalized tables without data duplication:
@@ -23,7 +23,7 @@ Inside the Tableau Data Source environment, a relational data model was construc
 - Extract Mode: The connection was switched from Live to Extract mode to store a local snapshot in memory, ensuring fast rendering for complex calculations and filters.
 - Data Integrity Verification: The preview confirmed 52777 cleaned transaction rows across 13 fields in the sales table.
 
-[images/tableau_data_model_relationships.png]
+![images](images/Screenshot%202026-10-22%20230807.png)
 
 # 3. Developing Core Worksheets and Visual Components
 ## 3.1 Key Performance Indicator Cards and Market Proportions
@@ -35,15 +35,15 @@ To provide immediate executive context, two headline metric cards and three prop
 - Properties by Price Tier: Validates the statistical quartile segmentation with 49.35 percent in the average tier, 25.05 percent in the high tier, and 25.60 percent in the low tier.
 - Vacant Properties Sold: Illustrates that vacant land sales represented only 4.77 percent of total volume compared to 95.23 percent for developed properties.
 
-[images/tableau_kpi_avg_sale_price.png]
+![images](images/Screenshot%202026-10-23%20004829.png)
 
-[images/tableau_kpi_avg_net_revenue.png]
+![images](images/Screenshot%202026-10-23%20004854.png)
 
-[images/tableau_pie_profitability_ratio.png]
+![images](images/Screenshot%202026-10-23%20004709.png)
 
-[images/tableau_pie_price_tier.png]
+![images](images/Screenshot%202026-10-23%20004740.png)
 
-[images/tableau_pie_vacant_properties.png]
+![images](images/Screenshot%202026-10-23%20004804.png)
 
 ## 3.2 Temporal Trends and Financial Trajectories
 Four chronological line charts were created to track financial performance across time:
@@ -53,13 +53,13 @@ Four chronological line charts were created to track financial performance acros
 - Net Income by Property Age: A quarterly breakdown across construction eras, demonstrating how Mid Century and Old homes drove massive returns while Very Modern properties recovered from early losses to become profitable in 2016.
 - Net Income by Tax District: A quarterly comparison showing the Urban Services District surging to a 200 million dollar quarterly peak in 2016, far ahead of all other districts.
 
-[images/tableau_net_income_trend.png]
+![images](images/Screenshot%202026-10-23%20002641.png)
 
-[images/tableau_avg_sale_price_trend.png]
+![images](images/Screenshot%202026-10-23%20002712.png)
 
-[images/tableau_net_income_property_age.png]
+![images](images/Screenshot%202026-10-23%20002745.png)
 
-[images/tableau_net_income_tax_district.png]
+![images](images/Screenshot%202026-10-23%20002813.png)
 
 ## 3.3 Transaction Volume and Land Use Distribution
 Two structural charts were engineered to analyze market capacity and buyer preferences:
@@ -67,9 +67,9 @@ Two structural charts were engineered to analyze market capacity and buyer prefe
 - Sales Volume versus Total Value: A dual axis chart combining monthly transaction count bars (reaching up to 1800 deals) with a total sales value line (surpassing 550 million dollars).
 - Property Volume Distribution by Land Use: A monthly stacked bar chart proving the consistent dominance of Single Family homes and Residential Condos across all seasons.
 
-[images/tableau_sales_volume_vs_value.png]
+![images](images/Screenshot%202026-10-23%20002848.png)
 
-[images/tableau_volume_distribution_land_use.png]
+![images](images/Screenshot%202026-10-23%20002922.png)
 
 ## 4. The Final Integrated Tableau Dashboard
 All eleven worksheets were assembled into a cohesive executive dashboard titled Nashville Real Estate Market Performance (2013 to 2016). The layout follows a structured three column visual hierarchy:
@@ -78,7 +78,7 @@ All eleven worksheets were assembled into a cohesive executive dashboard titled 
 - Center Column (Performance Trajectories): Displays the four primary time series charts aligned vertically to allow direct comparison of net income, deal prices, building age performance, and tax district growth across the same timeline.
 - Right Column (Market Volume and Structure): Features the stacked land use volume distribution on top and the dual axis sales volume versus total value chart at the bottom.
 
-[images/nremp_final_dashboard.jpg]
+<img width="1924" height="1144" alt="NREMP_Dashboard" src="https://github.com/user-attachments/assets/9c1cd478-e80b-48b4-8d5c-2348538af046" />
 
 ## 5. Executive Report and Recorded Presentation
 To bridge technical analysis with business decision making, a comprehensive executive presentation titled Our Performance In The Past 3 Years (2013 to 2016): An Executive Market Analysis was created in Google Slides and recorded by Wesam Musalli.
@@ -89,6 +89,6 @@ To bridge technical analysis with business decision making, a comprehensive exec
 - Demonstrating how capital cost reductions and single family home demand fueled the 2015 and 2016 profit boom.
 - Providing actionable recommendations on summer deal timing, urban district focus, and VIP client outreach.
 
-[images/executive_presentation_cover.jpg]
+![images](images/Recording%202026-10-24%20215247.gif)
 
 ![Watch the Recorded Executive Presentation Video]()
