@@ -1,5 +1,4 @@
 # Nashville Real Estate Data Engineering and Market Analysis (2013 to 2016)
-[images/data_pipeline_architecture.jpg]
 
 ## 📚 Table of Contents
 * [Project Summary](#-Project-Summary)
@@ -9,22 +8,31 @@
 * [Data Visualization, Interactive Dashboarding, and Executive Presentation](#-data-exploration--key-queries)
 * [Repository Structure and Detailed Documentation](#-advanced-sql-techniques)
 
+## Project Architecture
+![images](images/Gemini_Generated_Image_a5ozv4a5ozv4a5oz.jpg)
+
 ## Project Summary
-An end to end data engineering, exploratory analysis, and business intelligence project on over 56000 housing transactions in Nashville. Raw spreadsheet records were migrated into PostgreSQL, cleaned and normalized into a relational schema using SQL, analyzed with Python to solve key financial questions, and delivered through an interactive Tableau dashboard and executive presentation.
+data analysis, exploratory analysis, and business intelligence project on over 56000 housing transactions in Nashville. Raw spreadsheet records were migrated into PostgreSQL, cleaned and normalized into a relational schema using SQL, analyzed with Python to solve key financial questions, and delivered through an interactive Tableau dashboard and executive presentation.
 
 ## Stage 1: Database Setup and Data Ingestion
 What Was Done: Converted the raw Excel dataset to CSV, built the NashvilleHousingData database in PostgreSQL 18 via pgAdmin 4, defined a 19 column staging table, and connected DBeaver for SQL operations.
 
 Final Outcome: Successfully ingested over 56000 raw records and automatically standardized sale dates into clean date formats upon import.
 
-[images/dbeaver_query_results.png]
+![images](images/Screenshot%202026-10-10%20175333.png)
 
 ## Stage 2: Data Cleaning and Relational Normalization
 What Was Done: Populated missing property addresses via self joins, split composite property and owner addresses into atomic street, city, and state columns, standardized SoldAsVacant flags, cleaned ParcelID strings with regular expressions, converted land area from acres to square meters, removed initial duplicates, and decomposed the flat table into a normalized 3 table relational schema before dropping the staging table.
 
 Final Outcome: Transformed a single unorganized 33MB flat table into a clean, lightweight relational database consisting of ownerinfo, propertyinfo, and saleinfo linked by primary and foreign keys.
 
-[images/database_er_diagram.png]
+![images](images/Screenshot%202026-10-15%20215741.png)
+
+![images](images/Screenshot%202026-10-15%20215856.png)
+
+![images](images/Screenshot%202026-10-15%20220009.png)
+
+![images](images/Screenshot%202026-10-16%20163955.png)
 
 ## Stage 3: Exploratory Data Analysis and Business Intelligence
 What Was Done: Purged 4000 redundant sales transactions, engineered new analytical features (price tiers, net income margins, profitability status, and 6 architectural age eras), built SQL reporting views, and analyzed market trends using Python.
@@ -41,18 +49,18 @@ Best Time and Location to Close Deals: Mid year summer months (May to July) reco
 
 Operational Deliverable: Exported a targeted Excel list of the top 16 repeat VIP buyers (owning 10 or more properties) for Public Relations and Sales outreach.
 
-[images/land_use_sales_and_revenue_plots.png]
+![images](images/Screenshot%202026-10-20%20152841.png)
 
-[images/vip_customers_excel_sheet.png]
+![images](images/Screenshot%202026-10-20%20153336.png)
 
 ## Stage 4: Interactive Dashboard and Executive Presentation
 What Was Done: Connected Tableau Desktop directly to PostgreSQL in Extract mode, linked the 3 relational tables, built 11 specialized worksheets, assembled a 3 column executive dashboard, and recorded a full strategic presentation in Google Slides.
 
 Final Outcome: Delivered a production ready Tableau Dashboard summarizing key metrics (201000 dollar median sale price, 29000 dollar median net revenue, and 74.89 percent profitable deals ratio) alongside an Executive Market Analysis Presentation prepared by Wesam Musalli.
 
-[images/nremp_final_dashboard.jpg]
+![images](images/NREMP_Dashboard.gif)
 
-[images/executive_presentation_cover.jpg]
+![images](images/Recording%202026-10-24%20215247.gif)
 
 Repository Structure and Detailed Documentation
 - Stage 1: Environment Setup and Data Ingestion
