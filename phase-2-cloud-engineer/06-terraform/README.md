@@ -1,3 +1,4 @@
+![images](/images/HashiCorp_Terraform.png)
 # Terraform
 
 **الهدف:** أتمتة بناء البنية التحتية على AWS بدل إنشائها يدوياً
