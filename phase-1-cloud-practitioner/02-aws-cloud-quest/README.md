@@ -1,4 +1,4 @@
-![images](/images/AWS_Cloud_Quest_Cloud_Practitioner.jpg)
+![images](/images/AWS%20Cloud%20Quest%20Cityscape.png)
 # AWS Cloud Quest: Cloud Practitioner
 
 **الهدف:** تعلم أساسيات AWS بشكل تفاعلي (بصيغة لعبة)
