@@ -13,6 +13,14 @@
 
 Imagine you are playing a city-building game. Usually, you build your city by clicking and placing one building at a time. It’s fun, but it’s hard to remember exactly how you built it, so you could never build the exact same city twice. Terraform is like a 'planning office' for computer infrastructure
 
+![](/images/Screenshot%202026-10-31%20203720.png)
+
+[What is Terraform in 3 Minutes (2026) | Terraform Tutorial for Beginners](https://youtu.be/vIROhFhJghw?si=E4yuYCQoGVjZOnvr)
+
+![](/images/Screenshot%202026-10-31%20203148.png)
+
+[Terraform in 5 Minutes (Explained Clearly)](https://youtu.be/7S9HKPwfxDM?si=oGkV3eOz09XCjJIC)
+
 
 
 
